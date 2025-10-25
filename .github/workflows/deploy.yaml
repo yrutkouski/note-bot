@@ -26,7 +26,8 @@ jobs:
           name: 'note-bot'
           entry_point: 'webhook'
           runtime: 'nodejs22'
-          memory: '128Mi'
+          memory: '256Mi'
+          event_trigger_retry: false
 
   webhook:
     runs-on: ubuntu-latest
